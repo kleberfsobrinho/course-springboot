@@ -19,7 +19,7 @@ public class UserService {
 		return userRepository.findAll();
 	}
 	
-	public User findByID(Long Id) {
+	public User findById(Long Id) {
 		Optional<User> obj = userRepository.findById(Id);
 		return obj.get();
 	}
